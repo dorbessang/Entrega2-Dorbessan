@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitssan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel=" shortcut icon" href="../img/home/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- Inicio Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-default nav">
+            <div class="container-fluid">
+                <a href="../index.html" class="logo-nav">
+                    <img src="../img/home/favicon-opt.png" alt="logo vitssan">
+                    <h1 class="titulo-logo">VITSSAN</h1>
+                </a>
+                <button class="navbar-toggler collapsed sin-borde" type="" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em"
+                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+                        </path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-default">
+                    <button class="navbar-toggler collapsed sin-borde" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    </button>
+                    <ul class="navbar-nav ms-auto me-lg-3" id="navbar-default">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link nav-opt mx-2" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-opt mx-2" href="../pages/nosotros.html"> Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-opt mx-2" href="../pages/soluciones.html">Soluciones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-opt mx-2" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-opt mx-2" href="../pages/contacto.html" id="menu-5">Contacto</a>
+                        </li>
+                        <!-- <li class="nav-item mx-3"><img src="./img/nav-footer/translate.png" alt="traducir" class="boton"></li>
+                            <li class="nav-item mx-3"><img src="./img/nav-footer/dark.png" alt="modo oscuro" class="boton"></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin Nav Bar -->
+        <div class="box-titulo d-flex rounded-5">
+            <h1 class="h1-2">Productos</h1>
+        </div>
+        <div class="search rounded-4"><!-- Barra de busqueda -->
+            <div class="search-bar">
+                <input type="text" name="busqueda" placeholder="buscá tus produtos aquí..." class="rounded-30">
+                <button>
+                    <img src="../img/productos/buscar.png" alt="buscar">
+                </button>
+            </div>
+            <div>
+                <button type="button" class="vista">Ver todos</button>
+            </div>
+        </div>
+        <!-- Filtros de produtos -->
+        <div class="opc-filtro rounded-4">
+            <button class="flecha">
+                <img src="../img/productos/anterior.svg" alt="anterior">
+            </button>
+            <button class="filtro rounded-circle">Insecticidas</button>
+            <button class="filtro rounded-circle">Antiparasitarios</button>
+            <button class="filtro rounded-circle">Antiinflamatorios</button>
+            <button class="filtro rounded-circle">Respiratorios</button>
+            <button class="filtro rounded-circle">Cardiacos</button>
+            <button class="flecha">
+                <img src="../img/productos/siguiente.svg" alt="siguiente">
+            </button>
+        </div>
+        <!-- División de productos, tal vez lo separe en 2 paginas a las que accedo desde un menu desplegable en productos / pagina de inicio de productos -->
+        <!-- Otra opcion es que sea un gran filtro -->
+        <div class="animales d-lg-flex col-6 d-none">
+            <button type="button" class="boton-serv col-5 rounded-3">Grandes Animales</button>
+            <button type="button" class="boton-serv col-5 rounded-3">Pequeños Animales</button>
+        </div>
+    </header>
+    <!-- Inicio Footer: secciones, links de interes y redes -->
+    <!-- Inicio del Main: productos -->
+    <main>
+        <section class="contenedor container-fluid">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
+                <div class="card prod">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
+                        <button type="button" class="ver-mas">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Inicio Footer: secciones, links de interes y redes -->
+    <footer>
+        <hr class="sep-foot">
+        <section class="contenedor-footer">
+            <div class="logo-footer col-12 mx-auto col-lg-3">
+                <a href="../index.html"><img src="../img/home/logo.png" alt="logo vitssan 2" class="logo2"></a>
+            </div>
+            <div class="barra-links d-none d-lg-flex col-lg-6">
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/nosotros.html" class="a-especial txt-foot">Nosotros</a></li>
+                        <li><a href="../pages/nosotros.html" class="txt-foot">¿Quiénes Somos?</a></li>
+                        <li><a href="../pages/nosotros.html" class="txt-foot">Nuestros Valores</a></li>
+                        <li><a href="https://www.someve.com.ar/" target="_blank"
+                                class="a-especial txt-foot">Noticias</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/soluciones.html" class="a-especial txt-foot">Soluciones</a></li>
+                        <li><a href="../pages/soluciones.html#logistica" class="txt-foot">Logística</a></li>
+                        <li><a href="../pages/soluciones.html#calidad" class="txt-foot">Calidad</a></li>
+                        <li><a href="../pages/soluciones.html#new-prod" class="txt-foot">Nuevos Productos</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/productos.html" class="a-especial txt-foot">Productos</a></li>
+                        <li><a href="../pages/productos.html" class="txt-foot">Grandes Animales</a></li>
+                        <li><a href="../pages/productos.html" class="txt-foot">Pequeños Animales</a></li>
+                        <li><a href="../pages/contacto.html" class="a-especial txt-foot">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-footer col-6 col-lg-3">
+                <ul class="contact">
+                    <li class="my-2 hola">
+                        <img src="../img/nav-footer/mail.png" alt="correo electronico" class="boton mx-3">
+                        <a href="mailto:vitssan@vitssan.com">vitssan@vitssan.com</a>
+                    </li>
+                    <li class="my-2 hola">
+                        <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mx-3">
+                        <a href="tel:+5493434699706">+54 (343) 469-9706</a>
+                    </li>
+                    <li class="my-2 hola">
+                        <img src="../img/nav-footer/ubicacion.png" alt="direccion" class="boton mx-3">
+                        <a href="https://goo.gl/maps/UqrardDzc9NnQ1187" target="_blank">Junin 1357, Ciudad Autónoma <br>
+                            de Buenos Aires, Argentina</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes"> <!-- Redes -->
+                <a href="https://wa.me/543434699706" target="_blank"><img src="../img/nav-footer/whatsapp.png"
+                        alt="whatsapp" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/company/vitssan-argentina/?viewAsMember=true" target="_blank"><img
+                        src="../img/nav-footer/linkedin.png" alt="linkedin" class="socialmedia"></a>
+                <a href="#" target="_blank"><img src="../img/nav-footer/facebook.png" alt="facebook"
+                        class="socialmedia"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 VITSSAN S.A. Todos los derechos reservados. Para consultas de derechos de autor,
+                    contáctanos en vitssan@vitssan.com.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Fin Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
