@@ -63,7 +63,7 @@
         </div>
         <div class="search rounded-4"><!-- Barra de busqueda -->
             <div class="search-bar">
-                <input type="text" name="busqueda" placeholder="buscá tus produtos aquí..." class="rounded-30">
+                <input type="text" name="busqueda" placeholder="buscá tus produtos aquí..." class="rounded-3">
                 <button>
                     <img src="../img/productos/buscar.png" alt="buscar">
                 </button>
@@ -86,6 +86,39 @@
                 <img src="../img/productos/siguiente.svg" alt="siguiente">
             </button>
         </div>
+        <div class="accordion filtro-responsive d-lg-none w-50 mx-auto" id="expandFilter">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#filtros" aria-expanded="true" aria-controls="filtros">
+                        Filtrar
+                    </button>
+                </h2>
+                <div id="filtros" class="accordion-collapse collapse" data-bs-parent="#expandFilter">
+                    <div class="accordion-body">
+                        <a href="">Grandes Animales</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Pequeños Animales</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Insecticidas</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Antiparasitarios</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Antiinflamatorios</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Respiratorios</a>
+                    </div>
+                    <div class="accordion-body">
+                        <a href="">Cardiacos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- División de productos, tal vez lo separe en 2 paginas a las que accedo desde un menu desplegable en productos / pagina de inicio de productos -->
         <!-- Otra opcion es que sea un gran filtro -->
         <div class="animales d-lg-flex col-6 d-none">
@@ -97,86 +130,535 @@
     <!-- Inicio del Main: productos -->
     <main>
         <section class="contenedor container-fluid">
+
+            <!-- Producto 1 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/afoxolaner.png" class="card-img-top" alt="formula bromhexina">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Afoxolaner</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 1093861-60-9</h6>
+                        <p class="card-text">Uso: Insecticida</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Afoxolaner">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Afoxolaner" tabindex="-1" aria-labelledby="Afoxolaner"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Afoxolaner</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1093861-60-9</td>
+                                            <td>Polvo</td>
+                                            <td>C26 H17 Cl F9 N3 O3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>China</td>
+                                            <td>25,000 kg</td>
+                                            <td>Marítimo / Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Afoxolaner es un insecticida y acaricida isoxazolino potente contra Ixodes
+                                        scapularis en perros. Está indicado para el tratamiento y la prevención de
+                                        infestaciones de pulgas, así como para el tratamiento y el control de
+                                        infestaciones de garrapatas en perros y cachorros. Se administra por vía oral en
+                                        tabletas con sabor a carne y envenena a las pulgas una vez que comienzan a
+                                        alimentarse. Se utiliza tanto en solitario como en tratamiento combinado con
+                                        milbemicina oxima.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Salir</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 2 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/albendazol.png" class="card-img-top" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Albendazol</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 54965-21-8</h6>
+                        <p class="card-text">Uso: Antiparasitário</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Albendazol">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Albendazol" tabindex="-1" aria-labelledby="Albendazol"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Albendazol</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>54965-21-8</td>
+                                            <td>Polvo</td>
+                                            <td>C12 H15 N3 O2 S</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>China</td>
+                                            <td>8,000 kg</td>
+                                            <td>Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Albendazol es un antihelmíntico. Previene el proceso enzimático que provoca que
+                                        el parásito absorba glucosa, lo que conduce a su muerte.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Prodcuto 3 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/bromhexina.png" class="card-img-top" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Bromhexina HCL</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 611-75-6</h6>
+                        <p class="card-text">Uso: Antiinflamatorio</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Bromhexina">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Bromhexina" tabindex="-1" aria-labelledby="Bromhexina"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Bromhexina">Bromhexina HCL</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>611-75-6</td>
+                                            <td>Polvo</td>
+                                            <td>C14 H20 Br2 N2.HCl</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>India</td>
+                                            <td>50,000 kg</td>
+                                            <td>Marítimo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>La bromhexina es un agente mucolítico (expectorante) utilizado en el tratamiento
+                                        de trastornos respiratorios asociados con moco viscoso o en exceso. Además, la
+                                        bromhexina tiene propiedades antioxidantes.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 4 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/carprofen.png" class="card-img-top" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Carprofen</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 53716-49-7</h6>
+                        <p class="card-text">Uso: Antiinflamatorio</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal" data-bs-target="#Carprofen">Ver
+                                más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Carprofen" tabindex="-1" aria-labelledby="Carprofen" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="Carprofen">Carprofen</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>53716-49-7</td>
+                                            <td>Polvo</td>
+                                            <td>C15 H12 Cl N O2</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Alemania</td>
+                                            <td>50,000 gr</td>
+                                            <td>Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Completar con el texto de la droga correspondiente.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 5 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod py-2">
+                        <img src="../img/productos/cipermetrina.png" class="card-img-top" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Cipermetrina</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 1093861-60-9</h6>
+                        <p class="card-text">Uso: Insecticida</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Cipermetrina">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Cipermetrina" tabindex="-1" aria-labelledby="Cipermetrina"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cipermetrina</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>52315-07-8</td>
+                                            <td>Polvo</td>
+                                            <td>C22 H19 Cl2 N O3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>China</td>
+                                            <td>25,000 kg</td>
+                                            <td>Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Completar con el texto de la droga correspondiente.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 6 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/fenbendazol.png" class="card-img-top" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Fenbendazol</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 43210-67-9</h6>
+                        <p class="card-text">Uso: Antiparasitario</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Fenbendazol">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Fenbendazol" tabindex="-1" aria-labelledby="Fenbendazol"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fenbendazol</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>43210-67-9</td>
+                                            <td>Polvo</td>
+                                            <td>C15 H13 N3 O2 S</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>India</td>
+                                            <td>10,000 kg</td>
+                                            <td>Marítimo / Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Completar con el texto de la droga correspondiente.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 7 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/grapiprant.png" class="card-img-top " alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Grapiprant</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 415903-37-6</h6>
+                        <p class="card-text">Uso: Analgésico</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Grapiprant">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Grapiprant" tabindex="-1" aria-labelledby="Grapiprant"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Grapiprant</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>415903-37-6</td>
+                                            <td>Polvo</td>
+                                            <td>C26 H29 N5 O3 S</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>India</td>
+                                            <td>5,000 kg</td>
+                                            <td>Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Completar con el texto de la droga correspondiente.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Producto 8 -->
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center my-3">
-                <div class="card prod">
-                    <div class="card-body">
-                        <h5 class="card-title">Producto 1</h5>
-                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. xxxx-xx-x</h6>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ratione?</p>
-                        <button type="button" class="ver-mas">Ver más</button>
+                <div class="prod p-3 rounded">
+                    <div class="bg-white rounded img-prod p-1">
+                        <img src="../img/productos/oclacitinib.png" class="card-img-top px-5" alt="formula química">
+                    </div>
+                    <div class="card-body my-2">
+                        <h5 class="card-title">Oclacitinib</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">CAS nro. 1208319-26-9</h6>
+                        <p class="card-text">Uso: Antiparasitario</p>
+                        <!-- Button trigger modal -->
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="ver-mas" data-bs-toggle="modal"
+                                data-bs-target="#Oclacitinib">Ver más</button>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Oclacitinib" tabindex="-1" aria-labelledby="Oclacitinib"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Oclacitinib</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="tabla-prod w-100">
+                                        <tr>
+                                            <th>Número de CAS</th>
+                                            <th>Presentación</th>
+                                            <th>Fórmula</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1208319-26-9</td>
+                                            <td>Polvo</td>
+                                            <td>C15 H23 N5 O2 S</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Orígen</th>
+                                            <th>MOQ</th>
+                                            <th>Envío</th>
+                                        </tr>
+                                        <tr>
+                                            <td>India</td>
+                                            <td>50,000 gr</td>
+                                            <td>Aéreo</td>
+                                        </tr>
+                                    </table>
+                                    <hr>
+                                    <p>Completar con el texto de la droga correspondiente.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <nav aria-label="Page navigation example" class="mx-auto my-2">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link oscuro" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link oscuro" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link oscuro" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link oscuro" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link oscuro" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </main>
     <!-- Inicio Footer: secciones, links de interes y redes -->
@@ -213,24 +695,30 @@
                     </ul>
                 </div>
             </div>
-            <div class="contact-footer col-6 col-lg-3">
-                <ul class="contact">
-                    <li class="my-2 hola">
-                        <img src="../img/nav-footer/mail.png" alt="correo electronico" class="boton mx-3">
-                        <a href="mailto:vitssan@vitssan.com">vitssan@vitssan.com</a>
+            <div class="contact-footer col-6 col-lg-3 mx-auto">
+                <ul class="contact mx-auto p-0">
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="mailto:vitssan@vitssan.com" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/mail.png" alt="correo electronico" class="boton mx-3">
+                            <p class="my-auto">vitssan@vitssan.com</p>
+                        </a>
                     </li>
-                    <li class="my-2 hola">
-                        <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mx-3">
-                        <a href="tel:+5493434699706">+54 (343) 469-9706</a>
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="tel:+5493434699706" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mx-3">
+                            <p class="my-auto"> +54 (343) 469-9706</p>
+                        </a>
                     </li>
-                    <li class="my-2 hola">
-                        <img src="../img/nav-footer/ubicacion.png" alt="direccion" class="boton mx-3">
-                        <a href="https://goo.gl/maps/UqrardDzc9NnQ1187" target="_blank">Junin 1357, Ciudad Autónoma <br>
-                            de Buenos Aires, Argentina</a>
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="https://goo.gl/maps/UqrardDzc9NnQ1187" target="_blank" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/ubicacion.png" alt="dirección" class="boton mx-3">
+                            <p class="my-auto text-center text-lg-start"> Junin 1357, Ciudad Autónoma de Buenos Aires,
+                                Argentina </p>
+                        </a>
                     </li>
                 </ul>
             </div>
-            <div class="redes"> <!-- Redes -->
+            <div class="redes mx-auto"> <!-- Redes -->
                 <a href="https://wa.me/543434699706" target="_blank"><img src="../img/nav-footer/whatsapp.png"
                         alt="whatsapp" class="socialmedia"></a>
                 <a href="https://www.linkedin.com/company/vitssan-argentina/?viewAsMember=true" target="_blank"><img

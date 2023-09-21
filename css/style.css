@@ -54,6 +54,17 @@ ul {
     font-weight: 500;
     color: gray;
 }
+ .txt-inicio{
+    font-size: 1.1em;
+    font-weight: 200;
+    margin-top: 10px;
+ }
+
+ .txt-general{
+    font-size: 1em;
+    font-weight: 200;
+    margin-top: 10px;
+ }
 
 .txt-foot {
     font-size: 0.9em;
@@ -69,11 +80,13 @@ ul {
 .h3-1 {
     font-size: 2em;
     color: rgba(245, 245, 245, 255);
+    font-weight: 400;
 }
 
 .h3-2 {
     font-size: 1.6em;
     color: rgba(245, 245, 245, 255);
+    font-weight: 400;
 }
 
 .h5-1 {
@@ -86,6 +99,10 @@ ul {
     font-weight: 200;
 }
 
+.wh-300 {
+    font-weight: 300;
+}
+
 .wh-400 {
     font-weight: 400;
 }
@@ -94,10 +111,8 @@ ul {
     font-weight: 500;
 }
 
-.p-inicio {
+.teal-300 {
     color: #5eead4;
-    /* Teal 300 -- tailwind */
-    font-size: 1.1em;
 }
 
 .p-sol {
@@ -105,11 +120,16 @@ ul {
     color: rgba(245, 245, 245, 255);
 }
 
-.contraste {
-    color: rgb(67, 68, 67);
+.oscuro {
+    color: #171717;
+}
+
+.claro{
+    color: #f5f5f5;
 }
 
 .txt-foto{
+    color: #171717;
     background-color: rgba(229, 229, 229, 0.7);
 }
 
@@ -131,6 +151,13 @@ ul {
         padding: 20px 0;
         background: linear-gradient(to left, rgba(10, 181, 162, 255), rgba(16, 76, 72, 255));
         align-items: center;
+    }
+    .h1-2 {
+        text-transform: uppercase;
+        font-size: 2.3em;
+        font-weight: 300;
+        color: #e5e5e5;
+        margin: auto;
     }
 }
 
@@ -174,6 +201,14 @@ ul {
     align-items: center;
     transition: transform 0.5s;
     margin-left: 100px;
+}
+@media (max-width: 992px) {
+    .logo-nav{
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s;
+        margin: auto;
+    }
 }
 
 .logo-nav h1 {
@@ -254,8 +289,6 @@ ul {
 .contact {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 0;
 }
 
 .dato-cont {
@@ -265,7 +298,7 @@ ul {
 
 .cont-responsive {
     width: 250px;
-    font-size: 0.7em;
+    font-size: 0.7rem;
     text-align: center;
 }
 
@@ -273,18 +306,16 @@ ul {
     .cont-responsive {
         display: flex;
         width: 250px;
-        font-size: 0.7em;
+        font-size: 0.7rem;
     }
 }
-.hola {
+.contact-li {
     width: 250px;
     font-size: 0.7em;
-    display: flex;
-    text-align: center;
 }
 
-@media (min-width: 992px) {
-    .hola {
+@media (max-width: 992px) {
+    .contact-li {
         display: flex;
         width: 250px;
         font-size: 0.7em;
@@ -600,25 +631,13 @@ ul {
     justify-content: space-around;
 }
 
-.txt-serv-izq {
+.txt-serv {
     height: auto;
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 30px;
+    padding: 10px 20px;
     background: linear-gradient(to right, rgba(10, 181, 162, 255), rgba(16, 76, 72, 255));
-    border-radius: 15px 0 0 15px;
-    margin: 20px 0;
-}
-
-.txt-serv-der {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 30px;
-    background: linear-gradient(to right, rgba(10, 181, 162, 255), rgba(16, 76, 72, 255));
-    border-radius: 0 15px 15px 0;
     margin: 20px 0;
 }
 
@@ -629,6 +648,25 @@ ul {
 .img-serv {
     object-fit: contain;
     width: 100%;
+}
+@media (max-width: 1135px) {
+    .caja-img {
+       display: none;
+    }
+    
+    .img-serv {
+        display: none;
+    }
+
+    .txt-serv {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        background: linear-gradient(to right, rgba(10, 181, 162, 255), rgba(16, 76, 72, 255));
+        margin: 20px 0;
+        border-radius: 15px;
+    }
 }
 
 
@@ -683,21 +721,30 @@ button.vista {
     height: auto;
     border: none;
     background-color: rgb(207, 230, 223);
-    display: inline-block;
 }
 
-.prod button {
+.ver-mas {
     height: auto;
     width: auto;
     border: none;
-    font-size: 1.1em;
+    font-size: 0.9rem;
+    text-decoration: underline;
     background-color: transparent;
-    margin-right: 15px;
-    float: right;
+    margin-bottom: 16px;
 }
 
-.prod dl {
-    margin-left: 30px;
+.img-prod{
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.tabla-prod{
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+.fila-prod{
+    border-bottom: solid;
 }
 
 
@@ -750,7 +797,6 @@ button.vista {
 }
 
 .info {
-    width: 25%;
     padding: 30px 5px;
     display: flex;
     flex-flow: column nowrap;

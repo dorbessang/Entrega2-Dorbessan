@@ -59,20 +59,20 @@
         </nav>
         <!-- Fin Nav Bar -->
 
-        <div class="box-titulo d-flex rounded">
+        <div class="box-titulo d-flex rounded-5">
             <h1 class="h1-2">Contacto</h1>
         </div>
     </header>
     <!-- Fin del Header -->
     <main class="contacto">
-        <section class="info rounded">
+        <section class="info d-none d-md-flex col-4 col-lg-3 rounded-3">
             <h2 class="interlin">Información de contacto</h2>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4654669748134!2d-58.39908162390472!3d-34.59238955690058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca978fd0d471%3A0x85e970dc2481de2d!2sJun%C3%ADn%201357%2C%20C1114%20CABA!5e0!3m2!1ses-419!2sar!4v1692148320457!5m2!1ses-419!2sar"
-                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                width="95%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" class="interlin"></iframe>
             <p>
-                Junin 1357, Ciudad Autónoma de Buenos Aires,Argentina
+                Junin 1357, Ciudad Autónoma de Buenos Aires, Argentina.
             </p>
             <div class="interlin">
                 <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mg-10">
@@ -100,7 +100,8 @@
                 <input type="text" name="empresa" placeholder="Comapñía" class="rounded">
                 <input type="email" name="email" id="email" placeholder="Email*" class="rounded">
                 <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="rounded">
-                <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Dejanos tu mensaje" class="mensaje rounded"></textarea>
+                <textarea name="mensaje" id="mensaje" cols="40" rows="5" placeholder="Dejanos tu mensaje"
+                    class="mensaje rounded"></textarea>
                 <div class="botones">
                     <button type="reset" class="boton-cont rounded">Cancelar</button>
                     <button type="submit" class="boton-cont rounded">Enviar</button>
@@ -108,66 +109,81 @@
             </form>
         </section>
     </main>
-         <!-- Inicio Footer: secciones, links de interes y redes -->
-         <footer>
-            <hr class="sep-foot">
-            <section class="contenedor-footer">
-                <div class="logo-footer col-12 mx-auto col-lg-3">
-                    <a href="../index.html"><img src="../img/home/logo.png" alt="logo vitssan 2" class="logo2"></a>
-                </div>
-                <div class="barra-links d-none d-lg-flex col-lg-6">
-                    <div class="links">
-                        <ul>
-                            <li><a href="../pages/nosotros.html" class="a-especial txt-foot">Nosotros</a></li>
-                            <li><a href="../pages/nosotros.html" class="txt-foot">¿Quiénes Somos?</a></li>
-                            <li><a href="../pages/nosotros.html" class="txt-foot">Nuestros Valores</a></li>
-                            <li><a href="https://www.someve.com.ar/" target="_blank" class="a-especial txt-foot">Noticias</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li><a href="../pages/soluciones.html" class="a-especial txt-foot">Soluciones</a></li>
-                            <li><a href="../pages/soluciones.html#logistica" class="txt-foot">Logística</a></li>
-                            <li><a href="../pages/soluciones.html#calidad" class="txt-foot">Calidad</a></li>
-                            <li><a href="../pages/soluciones.html#new-prod" class="txt-foot">Nuevos Productos</a></li>
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li><a href="../pages/productos.html" class="a-especial txt-foot">Productos</a></li>
-                            <li><a href="../pages/productos.html" class="txt-foot">Grandes Animales</a></li>
-                            <li><a href="../pages/productos.html" class="txt-foot">Pequeños Animales</a></li>
-                            <li><a href="../pages/contacto.html" class="a-especial txt-foot">Contacto</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="contact-footer col-6 col-lg-3">
-                    <ul class="contact">
-                        <li class="my-2 hola">
-                            <img src="../img/nav-footer/mail.png" alt="correo electronico" class="boton mx-3">
-                            <a href="mailto:vitssan@vitssan.com">vitssan@vitssan.com</a>
-                        </li>
-                        <li class="my-2 hola">
-                            <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mx-3">
-                            <a href="tel:+5493434699706">+54 (343) 469-9706</a>
-                        </li>
-                        <li class="my-2 hola">
-                            <img src="../img/nav-footer/ubicacion.png" alt="direccion" class="boton mx-3">
-                            <a href="https://goo.gl/maps/UqrardDzc9NnQ1187" target="_blank">Junin 1357, Ciudad Autónoma <br> de Buenos Aires, Argentina</a>
-                        </li>
+    <!-- Inicio Footer: secciones, links de interes y redes -->
+    <footer>
+        <hr class="sep-foot">
+        <section class="contenedor-footer">
+            <div class="logo-footer col-12 mx-auto col-lg-3">
+                <a href="../index.html"><img src="../img/home/logo.png" alt="logo vitssan 2" class="logo2"></a>
+            </div>
+            <div class="barra-links d-none d-lg-flex col-lg-6">
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/nosotros.html" class="a-especial txt-foot">Nosotros</a></li>
+                        <li><a href="../pages/nosotros.html" class="txt-foot">¿Quiénes Somos?</a></li>
+                        <li><a href="../pages/nosotros.html" class="txt-foot">Nuestros Valores</a></li>
+                        <li><a href="https://www.someve.com.ar/" target="_blank"
+                                class="a-especial txt-foot">Noticias</a></li>
                     </ul>
                 </div>
-                <div class="redes"> <!-- Redes -->
-                    <a href="https://wa.me/543434699706" target="_blank"><img src="../img/nav-footer/whatsapp.png" alt="whatsapp" class="socialmedia"></a>
-                    <a href="https://www.linkedin.com/company/vitssan-argentina/?viewAsMember=true" target="_blank"><img src="../img/nav-footer/linkedin.png" alt="linkedin" class="socialmedia"></a>
-                    <a href="#" target="_blank"><img src="../img/nav-footer/facebook.png" alt="facebook" class="socialmedia"></a>
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/soluciones.html" class="a-especial txt-foot">Soluciones</a></li>
+                        <li><a href="../pages/soluciones.html#logistica" class="txt-foot">Logística</a></li>
+                        <li><a href="../pages/soluciones.html#calidad" class="txt-foot">Calidad</a></li>
+                        <li><a href="../pages/soluciones.html#new-prod" class="txt-foot">Nuevos Productos</a></li>
+                    </ul>
                 </div>
-                <div class="copyright">
-                    <p>&copy; 2023 VITSSAN S.A. Todos los derechos reservados. Para consultas de derechos de autor, contáctanos en vitssan@vitssan.com.</p>
+                <div class="links">
+                    <ul>
+                        <li><a href="../pages/productos.html" class="a-especial txt-foot">Productos</a></li>
+                        <li><a href="../pages/productos.html" class="txt-foot">Grandes Animales</a></li>
+                        <li><a href="../pages/productos.html" class="txt-foot">Pequeños Animales</a></li>
+                        <li><a href="../pages/contacto.html" class="a-especial txt-foot">Contacto</a></li>
+                    </ul>
                 </div>
-            </section>
-        </footer>
-        <!-- Fin Footer -->
+            </div>
+            <div class="contact-footer col-6 col-lg-3 mx-auto">
+                <ul class="contact mx-auto p-0">
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="mailto:vitssan@vitssan.com" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/mail.png" alt="correo electronico" class="boton mx-3">
+                            <p class="my-auto">vitssan@vitssan.com</p>
+                        </a>
+                    </li>
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="tel:+5493434699706" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/telefono.png" alt="telefono" class="boton mx-3">
+                            <p class="my-auto"> +54 (343) 469-9706</p>
+                        </a>
+                    </li>
+                    <li class="my-2 mx-auto contact-li">
+                        <a href="https://goo.gl/maps/UqrardDzc9NnQ1187" target="_blank" class="mx-auto mx-lg-0 d-flex">
+                            <img src="../img/nav-footer/ubicacion.png" alt="dirección" class="boton mx-3">
+                            <p class="my-auto text-center text-lg-start"> Junin 1357, Ciudad Autónoma de Buenos Aires,
+                                Argentina </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="redes mx-auto"> <!-- Redes -->
+                <a href="https://wa.me/543434699706" target="_blank"><img src="../img/nav-footer/whatsapp.png"
+                        alt="whatsapp" class="socialmedia"></a>
+                <a href="https://www.linkedin.com/company/vitssan-argentina/?viewAsMember=true" target="_blank"><img
+                        src="../img/nav-footer/linkedin.png" alt="linkedin" class="socialmedia"></a>
+                <a href="#" target="_blank"><img src="../img/nav-footer/facebook.png" alt="facebook"
+                        class="socialmedia"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 VITSSAN S.A. Todos los derechos reservados. Para consultas de derechos de autor,
+                    contáctanos en vitssan@vitssan.com.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- Fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>   
 </body>
 
 </html>
